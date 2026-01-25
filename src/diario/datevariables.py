@@ -65,6 +65,13 @@ class DateVariables:
         self.today_url: str = ""
         self.yesterday_url: str = ""
         self.tomorrow_url: str = ""
+        self.monday_url: str = ""
+        self.tuesday_url: str = ""
+        self.wednesday_url: str = ""
+        self.thursday_url: str = ""
+        self.friday_url: str = ""
+        self.saturday_url: str = ""
+        self.sunday_url: str = ""
 
     @staticmethod
     def calculate_yesterday(day:datetime.date):
@@ -125,6 +132,36 @@ class DateVariables:
          self.monday_month_name, self.monday_month_name_short,
          self.monday_year, self.monday_year_short) = self._assign_values(monday)
 
+        # Martedì
+        (self.tuesday_day_name, self.tuesday_day_name_short,
+         self.tuesday_day_name_short_2, self.tuesday_day, self.tuesday_month,
+         self.tuesday_month_name, self.tuesday_month_name_short,
+         self.tuesday_year, self.tuesday_year_short) = self._assign_values(monday + datetime.timedelta(days=1))
+
+        # Mercoledì
+        (self.wednesday_day_name, self.wednesday_day_name_short,
+         self.wednesday_day_name_short_2, self.wednesday_day, self.wednesday_month,
+         self.wednesday_month_name, self.wednesday_month_name_short,
+         self.wednesday_year, self.wednesday_year_short) = self._assign_values(monday + datetime.timedelta(days=2))
+
+        # Giovedì
+        (self.thursday_day_name, self.thursday_day_name_short,
+         self.thursday_day_name_short_2, self.thursday_day, self.thursday_month,
+         self.thursday_month_name, self.thursday_month_name_short,
+         self.thursday_year, self.thursday_year_short) = self._assign_values(monday + datetime.timedelta(days=3))
+
+        # Venerdì
+        (self.friday_day_name, self.friday_day_name_short,
+         self.friday_day_name_short_2, self.friday_day, self.friday_month,
+         self.friday_month_name, self.friday_month_name_short,
+         self.friday_year, self.friday_year_short) = self._assign_values(monday + datetime.timedelta(days=4))
+
+        # Sabato
+        (self.saturday_day_name, self.saturday_day_name_short,
+         self.saturday_day_name_short_2, self.saturday_day, self.saturday_month,
+         self.saturday_month_name, self.saturday_month_name_short,
+         self.saturday_year, self.saturday_year_short) = self._assign_values(monday + datetime.timedelta(days=5))
+
         # Domenica
         (self.sunday_day_name, self.sunday_day_name_short,
          self.sunday_day_name_short_2, self.sunday_day, self.sunday_month,
@@ -144,6 +181,21 @@ class DateVariables:
         self.yesterday_url = self._files.get_relative_path(day, source_view="daily", destination_view="yesterday")
         self.today_url = self.daily_url
         self.tomorrow_url = self._files.get_relative_path(day, source_view="daily", destination_view="tomorrow")
+
+        temp = monday
+        self.monday_url = self._files.get_relative_path(temp, source_view="weekly", destination_view="daily")
+        temp += datetime.timedelta(days=1)
+        self.tuesday_url = self._files.get_relative_path(temp, source_view="weekly", destination_view="daily")
+        temp += datetime.timedelta(days=1)
+        self.wednesday_url = self._files.get_relative_path(temp, source_view="weekly", destination_view="daily")
+        temp += datetime.timedelta(days=1)
+        self.thursday_url = self._files.get_relative_path(temp, source_view="weekly", destination_view="daily")
+        temp += datetime.timedelta(days=1)
+        self.friday_url = self._files.get_relative_path(temp, source_view="weekly", destination_view="daily")
+        temp += datetime.timedelta(days=1)
+        self.saturday_url = self._files.get_relative_path(temp, source_view="weekly", destination_view="daily")
+        temp = sunday
+        self.sunday_url = self._files.get_relative_path(temp, source_view="weekly", destination_view="daily")
 
     def render(self, day:datetime.date):
         if self._day != day:
