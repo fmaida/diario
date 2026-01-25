@@ -2,6 +2,8 @@
 
 Gestisce un diario personale ispirato al bullet journal.  
 
+Diario è un’applicazione fortemente opinionata: le scelte di struttura, formato e suddivisione del tempo sono intenzionali e non configurabili.  
+
 L'app nasce per rispondere a questi problemi:
 
 * Volevo un sistema di gestione delle note personali, suddiviso per giorni, settimane, mesi, trimestri e anni.
