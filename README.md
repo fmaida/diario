@@ -21,7 +21,7 @@ L'app nasce per rispondere a questi problemi:
 * Volevo usare come formato file il Markdown, per poter scrivere facilmente in formato testo puro ma poter gestire qualche elemento di stile e formattazione. Il formato Markdown è l'ideale perché rappresenta un'idea di come rappresentare gli stili in un semplice file di testo puro, più che essere un formato documento vero e proprio
 * Volevo che tutti i file Markdown potessero essere modificati manualmente in qualsiasi momento da qualsiasi applicazione di testo
 * Volevo che tutto ciò che si trova all’interno di ogni sottocartella, ad eccezione del file `_index.md`, venisse considerato implicitamente come ALLEGATO al documento del giorno, della settimana, del mese, del trimestre o dell’anno corrispondente.
-* Volevo utilizzare solo funzioni presenti nella libreria standard di Python 3.10-3.13, in modo da garantire la massima compatibilità e manutenibilità del software nel lungo periodo.
+* Volevo utilizzare solo funzioni presenti nella libreria standard di Python (>=3.11), in modo da garantire la massima compatibilità e manutenibilità del software nel lungo periodo.
 
 ### Come funziona la suddivisione del tempo
 
