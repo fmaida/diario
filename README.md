@@ -1,6 +1,10 @@
 # Diario
 
-Gestisce un diario personale vagamente in stile bullet journal.
+Gestisce un diario personale vagamente in stile bullet journal.  
+
+La suddivisione del tempo è basata su settimane, mesi, trimestri 
+e anni in base allo standard ISO 8601, che prevede che la 
+settimana standard inizi di lunedì e termini di domenica.
 
 ### Installazione
 
