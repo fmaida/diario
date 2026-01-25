@@ -25,3 +25,90 @@ Per ora, bisogna scaricare tutto e dalla cartella del progetto bisogna eseguire 
 ```
 pipx install --force .
 ```
+
+### Esempio di struttura creata dall'app
+
+```
+/Users/cesco/Documents/Diario/
+├── diary
+│   ├── daily
+│   │   ├── 2026
+│   │   │   ├── 01
+│   │   │   │   ├── 25
+│   │   │   │   │   └── _index.md
+│   │   │   │   ├── 26
+│   │   │   │   │   └── _index.md
+│   │   │   │   ├── 27
+│   │   │   │   │   └── _index.md
+│   │   │   │   ├── 28
+│   │   │   │   │   └── _index.md
+│   │   │   │   ├── 29
+│   │   │   │   │   └── _index.md
+│   │   │   │   ├── 30
+│   │   │   │   │   └── _index.md
+│   │   │   │   └── 31
+│   │   │   │       └── _index.md
+│   │   │   ├── 02
+│   │   │   │   ├── 01
+│   │   │   │   │   └── _index.md
+│   │   │   │   ├── 02
+│   │   │   │   │   └── _index.md
+.   .   .   .   .   .
+│   ├── monthly
+│   │   ├── 2026
+│   │   │   ├── 01
+│   │   │   │   └── _index.md
+│   │   │   ├── 02
+│   │   │   │   └── _index.md
+│   │   │   ├── 03
+│   │   │   │   └── _index.md
+│   │   │   ├── 04
+│   │   │   │   └── _index.md
+│   │   │   ├── 05
+│   │   │   │   └── _index.md
+│   │   │   ├── 06
+│   │   │   │   └── _index.md
+│   │   │   ├── 07
+│   │   │   │   └── _index.md
+│   │   │   ├── 08
+│   │   │   │   └── _index.md
+│   │   │   ├── 09
+│   │   │   │   └── _index.md
+│   │   │   ├── 10
+│   │   │   │   └── _index.md
+│   │   │   ├── 11
+│   │   │   │   └── _index.md
+│   │   │   └── 12
+│   │   │       └── _index.md
+.   .   .
+│   ├── quarterly
+│   │   ├── 2026
+│   │   │   ├── 01
+│   │   │   │   └── _index.md
+│   │   │   ├── 02
+│   │   │   │   └── _index.md
+│   │   │   ├── 03
+│   │   │   │   └── _index.md
+│   │   │   └── 04
+│   │   │       └── _index.md
+.   .   .
+│   ├── weekly
+│   │   ├── 2026
+│   │   │   ├── 04
+│   │   │   │   └── _index.md
+│   │   │   ├── 05
+│   │   │   │   └── _index.md
+│   │   │   ├── 06
+│   │   │   │   └── _index.md
+│   │   │   ├── 07
+.   .   .   .
+│   └── yearly
+│       ├── 2026
+│       │   └── _index.md
+└── templates
+    ├── daily.md
+    ├── monthly.md
+    ├── quarterly.md
+    ├── weekly.md
+    └── yearly.md
+```
