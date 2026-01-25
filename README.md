@@ -6,7 +6,7 @@ Diario è un’applicazione fortemente opinionata: le scelte
 di struttura, formato e suddivisione del tempo sono 
 intenzionali e non configurabili. Quello che invece è 
 configurabile da parte dell'utente sono i file modello 
-in formato markdown all'interno della cartella `templates`.    
+in formato Markdown all'interno della cartella `templates`.    
 
 L'app nasce per rispondere a questi problemi:
 
@@ -16,7 +16,7 @@ L'app nasce per rispondere a questi problemi:
 * Volevo un sistema talmente semplice da poter essere usato con un semplice editor di testo
 * Volevo che i file giornalieri referenziassero automaticamente i file settimanali, e che i file settimanali referenziassero automaticamente i file mensili, e così via
 * Volevo che tutto fosse basato semplicemente su cartelle annidate e file di testo, per essere sicuro che anche fra 20 anni i dati siano facilmente leggibili e scrivibili
-* Volevo usare come formato file il Markdown, per poter scrivere facilmente in formato testo puro ma poter gestire qualche elemento di stile e formattazione
+* Volevo usare come formato file il Markdown, per poter scrivere facilmente in formato testo puro ma poter gestire qualche elemento di stile e formattazione. Il formato Markdown è l'ideale perchè rappresenta un idea di come rappresentare gli stili in un semplice file di testo puro, più che essere un formato documento vero e proprio
 * Volevo che tutti i file markdown potessero essere modificati manualmente in qualsiasi momento da qualsiasi applicazione di testo
 
 ### Come funziona la suddivisione del tempo
@@ -43,11 +43,11 @@ pipx install --force .
 ```
 
 L'app si aspetta che esista un file di configurazione chiamato 
-`config.json` all'interno della cartella ´~/.config/diario/`. 
+`config.json` all'interno della cartella `~/.config/diario/`. 
 Se questo file, cartella o entrambi non esistono, provvederà 
 a crearli automaticamente con delle impostazioni predefinite.
 
-È possibile modificare sia la cartella di destinazione che il 
+È possibile modificare sia la cartella di destinazione che 
 l'editor di testo predefinito modificando il file di 
 configurazione `~/.config/diario/config.json`.
 
