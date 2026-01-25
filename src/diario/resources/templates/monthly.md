@@ -19,4 +19,4 @@
 
 ______________________________________________________________
 #### Vai alla vista trimestrale:
-[{{quarter}} {{year}}]({{quarterly_url}})
+[{{quarter}} {{year}}]({{quarterly_url}})  
