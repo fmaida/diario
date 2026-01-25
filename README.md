@@ -16,9 +16,9 @@ L'app nasce per rispondere a questi problemi:
 * Volevo un sistema talmente semplice da poter essere usato con un semplice editor di testo
 * Volevo che i file giornalieri referenziassero automaticamente i file settimanali, e che i file settimanali referenziassero automaticamente i file mensili, e così via
 * Volevo che tutto fosse basato semplicemente su cartelle annidate e file di testo, per essere sicuro che anche fra 20 anni i dati siano facilmente leggibili e scrivibili
-* Volevo usare come formato file il Markdown, per poter scrivere facilmente in formato testo puro ma poter gestire qualche elemento di stile e formattazione. Il formato Markdown è l'ideale perchè rappresenta un idea di come rappresentare gli stili in un semplice file di testo puro, più che essere un formato documento vero e proprio
+* Volevo usare come formato file il Markdown, per poter scrivere facilmente in formato testo puro ma poter gestire qualche elemento di stile e formattazione. Il formato Markdown è l'ideale perché rappresenta un'idea di come rappresentare gli stili in un semplice file di testo puro, più che essere un formato documento vero e proprio
 * Volevo che tutti i file Markdown potessero essere modificati manualmente in qualsiasi momento da qualsiasi applicazione di testo
-* Volevo che tutto quello che si trova all'interno di ogni sottocartella, se non è un file `_index.md` venisse considerato implicitamente come ALLEGATO al documento del giorno, settimana, mese, trimestre o anno indicato
+* Volevo che tutto ciò che si trova all’interno di ogni sottocartella, ad eccezione del file `_index.md`, venisse considerato implicitamente come ALLEGATO al documento del giorno, della settimana, del mese, del trimestre o dell’anno corrispondente.
 
 ### Come funziona la suddivisione del tempo
 
