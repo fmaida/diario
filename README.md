@@ -12,7 +12,7 @@ L'app nasce per rispondere a questi problemi:
 
 * Volevo un sistema di gestione delle note personali, suddiviso per giorni, settimane, mesi, trimestri e anni.
 * Volevo un sistema mantenibile e gestibile nel lungo periodo, idealmente per tutta la vita dell’utente.
-* Volevo che i dati dell'app non dipendessero dall’applicazione stessa. **Anche se la mia app smettesse di funzionare o non fosse più mantenuta, tutti i documenti resterebbero leggibili, modificabili e utilizzabili come semplici file Markdown organizzati in cartelle.**
+* Volevo che i dati dell'app non dipendessero dall’applicazione stessa. Anche se la mia app smettesse di funzionare o non fosse più mantenuta, tutti i documenti resterebbero leggibili, modificabili e utilizzabili come semplici file Markdown organizzati in cartelle.
 * Volevo un sistema del quale fosse facile e banale creare una copia di sicurezza. In questo caso specifico, basta copiare una singola cartella.
 * Volevo un sistema che all'occorrenza fosse facilmente versionabile con Git
 * Volevo un sistema talmente semplice da poter essere usato con un semplice editor di testo
