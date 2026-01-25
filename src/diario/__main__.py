@@ -6,7 +6,7 @@ from diario.diary import Diary
 
 
 def info_quit(code:int=1) -> None:
-    msg = "Uso: diario [--tomorrow | --yesterday | GG/MM/AAAA | GG-MM-AAAA]"
+    msg = "Uso: diario [--tomorrow | --yesterday | --populate | GG/MM/AAAA | GG-MM-AAAA]"
     if code == 0:
         print(msg)
         raise SystemExit(0)
@@ -22,9 +22,14 @@ def _parse_date(s: str) -> datetime.date:
             raise SystemExit(f"Data non valida: '{s}'. Formato atteso: GG/MM/AAAA o GG-MM-AAAA (es. 20/12/2026 o 20-12-2026).") from e
 
 def main() -> None:
+
     # diario            -> oggi
     # diario GG/MM/AAAA -> giorno specifico
+
+    diario = Diary()
     today = datetime.date.today()
+    day = None
+
     args = sys.argv[1:]
     if len(args) == 0:
         day = today
@@ -34,6 +39,11 @@ def main() -> None:
             day = today + datetime.timedelta(days=1)
         elif arg == "--yesterday":
             day = today - datetime.timedelta(days=1)
+        elif arg == "--populate":
+            day = today + datetime.timedelta(days=365)
+            for i in range(366):
+                collezione = diario.get(day=day - datetime.timedelta(days=i))
+            quit(0)
         elif arg == "--help" or arg == "-h":
             info_quit(0)
         else:
@@ -41,11 +51,7 @@ def main() -> None:
     else:
         info_quit()
 
-    diario = Diary()
-    day = day + datetime.timedelta(days=365)
-    for i in range(366):
-        collezione = diario.get(day=day - datetime.timedelta(days=i))
-
+    collezione = diario.get(day)
     #print(collezione.daily.index)
     #print(collezione.weekly.index)
     #print(collezione.monthly.index)

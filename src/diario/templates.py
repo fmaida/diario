@@ -1,6 +1,7 @@
 import datetime
 from dataclasses import dataclass
 from pathlib import Path
+import shutil
 
 from diario.datevariables import DateVariables
 from diario.diaryfiles import DiaryFiles
@@ -15,7 +16,13 @@ class Templates:
         self.dates = DateVariables(files=self.files)
 
     def _return_template(self, filename:str, day:datetime.date):
+        if not self.path.exists():
+            self.path.mkdir(parents=True, exist_ok=True)
         temp = self.path / filename
+        if not temp.exists():
+            origin = Path(__file__).parent / "resources" / "templates" / filename
+            shutil.copy2(origin, temp)
+
         if temp.is_file() and temp.exists():
             self.dates.render(day)
             text = temp.read_text(encoding="utf-8")
