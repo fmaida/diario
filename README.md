@@ -19,6 +19,15 @@ La suddivisione del tempo è basata su giorni, settimane, mesi,
 trimestri e anni in base allo standard ISO 8601, che prevede 
 che la settimana standard inizi di lunedì e termini di domenica.
 
+* Giornalieri: `{destinazione}/diary/daily/YYYY/MM/DD/`
+* Settimanali: `{destinazione}/diary/weekly/YYYY/WW/`
+* Mensili: `{destinazione}/monthly/YYYY/MM/`
+* Trimestrali: `{destinazione}/quarterly/YYYY/QQ/`
+* Annuali: `{destinazione}/yearly/YYYY/`
+
+> Nota 1: `WW` è un numero da 00 a 53 che rappresenta la settimana in base allo standard ISO 8601.  
+> Nota 2: `QQ` è un numero da 01 a 04 che rappresenta il trimestre.
+
 ### Installazione
 
 Per ora, bisogna scaricare tutto e dalla cartella del progetto bisogna eseguire questo comando:
