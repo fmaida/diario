@@ -42,6 +42,67 @@ Per ora, bisogna scaricare tutto e dalla cartella del progetto bisogna eseguire 
 pipx install --force .
 ```
 
+L'app si aspetta che esista un file di configurazione chiamato 
+`config.json` all'interno della cartella ´~/.config/diario/`. 
+Se questo file, cartella o entrambi non esistono, provvederà 
+a crearli automaticamente con delle impostazioni predefinite.
+
+È possibile modificare sia la cartella di destinazione che il 
+l'editor di testo predefinito modificando il file di 
+configurazione `~/.config/diario/config.json`.
+
+Questi sono i parametri di default dell'applicazione:
+
+```json
+{
+  "path": "~/.config/diario/data",
+  "locale": "en_US",
+  "editor": "nano"
+}
+```
+
+### Uso
+
+Per lanciare l'app e creare un documento per il giorno corrente, 
+da terminale è necessario eseguire questo comando:
+
+```
+diario
+```
+
+Dopo aver lanciato il comando, l'app creerà tutti i documenti 
+richiesti ed invocherà l'editor di testo definito nel file di 
+configurazione. Per default, l'app tenterà di invocare l'editor 
+`nano`.
+
+Se invece si desidera creare un documento per un giorno 
+specifico, è possibile eseguire questo comando:
+
+```
+diario 24-12-2027
+```
+
+Se si desidera creare un documento per il giorno 
+successivo a quello odierno, è possibile eseguire:
+
+```
+diario --tomorrow
+```
+
+Per creare automaticamente tutti i documenti a partire da oggi e 
+per i prossimi 365 giorni, è possibile eseguire:
+
+```
+diario --populate
+```
+
+Per altri usi, rimando al semplice aiuto in linea invocabile 
+con il comando:
+
+```
+diario --help
+```
+
 ### Esempio di struttura creata dall'app
 
 ```

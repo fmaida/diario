@@ -14,10 +14,11 @@ class Config:
         self.config_file.parent.mkdir(parents=True, exist_ok=True)
         if not self.config_file.exists():
             # Crea un file di configurazione di default se il file non esiste
-            base = Path.home() / "Documents" / "Diario"
+            base_dir = Path.home() / ".config" / "diario" / "data"
+            base_dir.mkdir(parents=True, exist_ok=True)
             default_config = {}
-            default_config["path"] = str(base)
-            default_config["locale"] = "it_IT"
+            default_config["path"] = str(base_dir)
+            default_config["locale"] = "en_US"
             default_config["editor"] = "nano"
             self.config_file.write_text(
                 json.dumps(default_config, indent=2, ensure_ascii=False),
