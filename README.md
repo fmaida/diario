@@ -11,6 +11,7 @@ L'app nasce per rispondere a questi problemi:
 * Volevo che i file giornalieri referenziassero automaticamente i file settimanali, e che i file settimanali referenziassero automaticamente i file mensili, e così via
 * Volevo che tutto fosse basato semplicemente su cartelle annidate e file di testo, per essere sicuro che anche fra 20 anni i dati siano facilmente leggibili e scrivibili
 * Volevo usare come formato file il Markdown, per poter scrivere facilmente in formato testo puro ma poter gestire qualche elemento di stile e formattazione
+* Volevo che tutti i file markdown potessero essere modificati manualmente in qualsiasi momento da qualsiasi applicazione di testo
 
 ### Come funziona la suddivisione del tempo
 
