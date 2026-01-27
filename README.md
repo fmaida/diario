@@ -34,10 +34,10 @@ Time is subdivided into days, weeks, months, quarters, and years according to th
 
 ## Installation
 
-For now, the application must be installed by downloading the project and running the following command from the project directory:
+The application can be installed using `pipx` by running the following command:
 
 ```
-pipx install --force .
+pipx install diario-cli
 ```
 
 The application expects a configuration file named `config.json` to exist inside the `~/.config/diario/` directory. If the file, the directory, or both do not exist, they will be created automatically with default settings.

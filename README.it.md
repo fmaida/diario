@@ -40,10 +40,10 @@ che la settimana standard inizi di lunedì e termini di domenica.
 
 ## Installazione
 
-Per ora, bisogna scaricare tutto e dalla cartella del progetto bisogna eseguire questo comando:
+L'app può essere istallata attraverso `pipx` digitando questo comando da terminale:
 
 ```
-pipx install --force .
+pipx install diario-cli
 ```
 
 L'app si aspetta che esista un file di configurazione chiamato 
