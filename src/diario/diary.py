@@ -44,6 +44,7 @@ class Diary:
             locale.setlocale(locale.LC_TIME, self.config.settings.get("locale") + ".UTF-8")
         #self.today = datetime.date.today()
         base_dir = Path(self.config.settings["path"])
+        base_dir.mkdir(parents=True, exist_ok=True)
         if base_dir.is_dir() and base_dir.exists():
             self.files = DiaryFiles(base_dir=base_dir)
             self.templates = Templates(path=base_dir / "templates", files=self.files)
