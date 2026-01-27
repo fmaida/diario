@@ -2,7 +2,13 @@
 
 A personal diary application inspired by the bullet journal method.
 
-Diario is a strongly opinionated application: decisions about structure, format, and time subdivision are intentional and not configurable. What *is* configurable by the user are the Markdown template files located in the `templates` directory.
+Diario is a framework that is easy for humans to adopt 
+and stick with, and easy for machines to process.  
+It is also a strongly opinionated application: decisions 
+about structure, format, and time subdivision are intentional 
+and not configurable.  
+What *is* configurable are the Markdown template files located 
+in the `templates` directory.
 
 The application was created to address the following needs:
 

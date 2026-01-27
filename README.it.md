@@ -2,11 +2,15 @@
 
 Gestisce un diario personale ispirato al bullet journal.  
 
-Diario è un’applicazione fortemente opinionata: le scelte 
+Diario è un framework che le persone possono adottare 
+facilmente e portare avanti nel tempo, e che le macchine 
+possono elaborare senza difficoltà.   
+È inoltre un’applicazione fortemente opinionata: le scelte 
 di struttura, formato e suddivisione del tempo sono 
-intenzionali e non configurabili. Quello che invece è 
-configurabile da parte dell'utente sono i file modello 
-in formato Markdown all'interno della cartella `templates`.    
+intenzionali e non configurabili.  
+Quello che invece è configurabile da parte dell'utente sono 
+i file modello in formato Markdown all'interno della 
+cartella `templates`.      
 
 L'app nasce per rispondere a questi problemi:
 
