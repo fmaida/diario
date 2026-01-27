@@ -48,7 +48,7 @@ These are the default configuration parameters:
 
 ```json
 {
-  "path": "~/.config/diario/data",
+  "path": "~/.local/share/diario",
   "locale": "en_US",
   "editor": "nano"
 }

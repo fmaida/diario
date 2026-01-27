@@ -14,7 +14,7 @@ class Config:
         self.config_file.parent.mkdir(parents=True, exist_ok=True)
         if not self.config_file.exists():
             # Crea un file di configurazione di default se il file non esiste
-            base_dir = Path.home() / ".config" / "diario" / "data"
+            base_dir = Path.home() / ".local" / "share" / "diario"
             base_dir.mkdir(parents=True, exist_ok=True)
             default_config = {}
             default_config["path"] = str(base_dir)

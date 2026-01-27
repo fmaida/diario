@@ -1,6 +1,6 @@
 [project]
 name = "diario-cli"
-version = "1.0.0.post4"
+version = "1.0.1"
 description = "Diario is an opinionated personal journaling tool inspired by bullet journal practices, based on plain UTF-8 Markdown files organized in a time-based directory structure. It prioritizes long-term readability, filesystem portability, and independence from the application itself."
 authors = [
     {name = "Francesco Maida",email = "francesco.maida@gmail.com"}
