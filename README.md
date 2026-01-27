@@ -110,7 +110,7 @@ Think about it this way:
 ## Example directory structure created by the application
 
 ```
-/Users/cesco/Documents/Diario/
+/Users/cesco/.local/share/diario/
 ├── diary
 │   ├── daily
 │   │   ├── 2026
