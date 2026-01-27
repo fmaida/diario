@@ -127,7 +127,7 @@ Pensala così:
 ## Esempio di struttura creata dall'app
 
 ```
-/Users/cesco/.local/share/diario/
+~/.local/share/diario/
 ├── diary
 │   ├── daily
 │   │   ├── 2026
