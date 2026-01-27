@@ -1,61 +1,50 @@
 # Diario
 
-Gestisce un diario personale ispirato al bullet journal.  
+A personal diary application inspired by the bullet journal method.
 
-Diario è un’applicazione fortemente opinionata: le scelte 
-di struttura, formato e suddivisione del tempo sono 
-intenzionali e non configurabili. Quello che invece è 
-configurabile da parte dell'utente sono i file modello 
-in formato Markdown all'interno della cartella `templates`.    
+Diario is a strongly opinionated application: decisions about structure, format, and time subdivision are intentional and not configurable. What *is* configurable by the user are the Markdown template files located in the `templates` directory.
 
-L'app nasce per rispondere a questi problemi:
+The application was created to address the following needs:
 
-* Volevo un sistema di gestione delle note personali, suddiviso per giorni, settimane, mesi, trimestri e anni.
-* Volevo un sistema mantenibile e gestibile nel lungo periodo, idealmente per tutta la vita dell’utente.
-* Volevo che i dati dell'app non dipendessero dall’applicazione stessa. Anche se la mia app smettesse di funzionare o non fosse più mantenuta, tutti i documenti resterebbero leggibili, modificabili e utilizzabili come semplici file Markdown organizzati in cartelle.
-* Volevo un sistema del quale fosse facile e banale creare una copia di sicurezza. In questo caso specifico, basta copiare una singola cartella.
-* Volevo un sistema compatibile con i servizi di archiviazione cloud (Dropbox, iCloud, Google Drive, …) e versionabile con Git in modo efficiente.
-* Volevo un sistema talmente semplice da poter essere usato direttamente con un editor di testo
-* Volevo che i file giornalieri referenziassero automaticamente i file settimanali, e che i file settimanali referenziassero automaticamente i file mensili, e così via
-* Volevo che tutto fosse basato semplicemente su cartelle annidate e file di testo semplici codificati in UTF-8, per essere sicuro che anche fra 20 anni i dati siano facilmente leggibili e scrivibili
-* Volevo usare come formato file il Markdown, per poter scrivere facilmente in formato testo puro ma poter gestire qualche elemento di stile e formattazione. Il formato Markdown è l'ideale perché rappresenta un'idea di come rappresentare gli stili in un semplice file di testo puro, più che essere un formato documento vero e proprio
-* Volevo che tutti i file Markdown potessero essere modificati manualmente in qualsiasi momento da qualsiasi applicazione di testo
-* Volevo che tutto ciò che si trova all’interno di ogni sottocartella, ad eccezione del file `_index.md`, venisse considerato implicitamente come allegato al documento del giorno, della settimana, del mese, del trimestre o dell’anno corrispondente.
-* Volevo utilizzare solo funzioni presenti nella libreria standard di Python (>=3.11), in modo da garantire la massima compatibilità e manutenibilità del software nel lungo periodo.
+* I wanted a personal note management system organized by days, weeks, months, quarters, and years.
+* I wanted a system that is maintainable over the long term, ideally for the entire lifetime of the user.
+* I wanted the application data not to depend on the application itself. Even if the app stopped working or was no longer maintained, all documents would remain readable, editable, and usable as simple Markdown files organized in directories.
+* I wanted a system for which creating a backup is trivial. In this specific case, it is enough to copy a single directory.
+* I wanted a system compatible with common cloud storage services (Dropbox, iCloud, Google Drive, …) and efficiently versionable with Git.
+* I wanted a system simple enough to be used directly with a plain text editor.
+* I wanted daily files to automatically reference weekly files, weekly files to reference monthly files, and so on.
+* I wanted everything to be based on nested directories and simple UTF-8 encoded text files, to ensure that the data will still be easily readable and writable even 20 years from now.
+* I wanted to use Markdown as the file format, so that writing could be done in plain text while still allowing some basic structure and formatting. Markdown is ideal because it represents an approach to expressing style in plain text, rather than being a full document format.
+* I wanted all Markdown files to be manually editable at any time using any text editor.
+* I wanted everything inside each subdirectory—except the `_index.md` file—to be implicitly treated as an attachment to the corresponding day, week, month, quarter, or year document.
+* I wanted to rely only on functions available in the Python standard library (>= 3.11), in order to ensure maximum compatibility and long-term maintainability.
 
-### Come funziona la suddivisione del tempo
+## Time subdivision
 
-La suddivisione del tempo è basata su giorni, settimane, mesi, 
-trimestri e anni in base allo standard ISO 8601, che prevede 
-che la settimana standard inizi di lunedì e termini di domenica.
+Time is subdivided into days, weeks, months, quarters, and years according to the ISO 8601 standard, which defines the week as starting on Monday and ending on Sunday.
 
-* Giornalieri: `{destinazione}/diary/daily/YYYY/MM/DD/`
-* Settimanali: `{destinazione}/diary/weekly/YYYY/WW/`
-* Mensili: `{destinazione}/diary/monthly/YYYY/MM/`
-* Trimestrali: `{destinazione}/diary/quarterly/YYYY/QQ/`
-* Annuali: `{destinazione}/diary/yearly/YYYY/`
+* Daily: `{destination}/diary/daily/YYYY/MM/DD/`
+* Weekly: `{destination}/diary/weekly/YYYY/WW/`
+* Monthly: `{destination}/diary/monthly/YYYY/MM/`
+* Quarterly: `{destination}/diary/quarterly/YYYY/QQ/`
+* Yearly: `{destination}/diary/yearly/YYYY/`
 
-> Nota 1: `WW` è un numero da 01 a 53 che rappresenta la settimana in base allo standard ISO 8601.  
-> Nota 2: `QQ` è un numero da 01 a 04 che rappresenta il trimestre.
+> Note 1: `WW` is a number from 01 to 53 representing the ISO 8601 week number.  
+> Note 2: `QQ` is a number from 01 to 04 representing the quarter.
 
-### Installazione
+## Installation
 
-Per ora, bisogna scaricare tutto e dalla cartella del progetto bisogna eseguire questo comando:
+For now, the application must be installed by downloading the project and running the following command from the project directory:
 
 ```
 pipx install --force .
 ```
 
-L'app si aspetta che esista un file di configurazione chiamato 
-`config.json` all'interno della cartella `~/.config/diario/`. 
-Se questo file, cartella o entrambi non esistono, provvederà 
-a crearli automaticamente con delle impostazioni predefinite.
+The application expects a configuration file named `config.json` to exist inside the `~/.config/diario/` directory. If the file, the directory, or both do not exist, they will be created automatically with default settings.
 
-È possibile modificare sia la cartella di destinazione che 
-l'editor di testo predefinito modificando il file di 
-configurazione `~/.config/diario/config.json`.
+Both the destination directory and the default text editor can be changed by editing the configuration file located at `~/.config/diario/config.json`.
 
-Questi sono i parametri di default dell'applicazione:
+These are the default configuration parameters:
 
 ```json
 {
@@ -65,49 +54,41 @@ Questi sono i parametri di default dell'applicazione:
 }
 ```
 
-### Uso
+## Usage
 
-Per lanciare l'app e creare un documento per il giorno corrente, 
-da terminale è necessario eseguire questo comando:
+To start the application and create a document for the current day, run:
 
 ```
 diario
 ```
 
-Dopo aver lanciato il comando, l'app creerà tutti i documenti 
-richiesti ed invocherà l'editor di testo definito nel file di 
-configurazione. Per default, l'app tenterà di invocare l'editor 
-`nano`.
+After running the command, the application will create all required documents and invoke the text editor defined in the configuration file. By default, the application will attempt to use the `nano` editor.
 
-Se invece si desidera creare un documento per un giorno 
-specifico, è possibile eseguire questo comando:
+To create a document for a specific day, run:
 
 ```
 diario 24-12-2027
 ```
 
-Se si desidera creare un documento per il giorno 
-successivo a quello odierno, è possibile eseguire:
+To create a document for the day after the current one, run:
 
 ```
 diario --tomorrow
 ```
 
-Per creare automaticamente tutti i documenti a partire da oggi e 
-per i prossimi 365 giorni, è possibile eseguire:
+To automatically create all documents starting from today and covering the next 365 days, run:
 
 ```
 diario --populate
 ```
 
-Per altri usi, rimando al semplice aiuto in linea invocabile 
-con il comando:
+For additional options, refer to the built-in help:
 
 ```
 diario --help
 ```
 
-### Esempio di struttura creata dall'app
+## Example directory structure created by the application
 
 ```
 /Users/cesco/Documents/Diario/
