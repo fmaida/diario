@@ -15,7 +15,7 @@ L'app nasce per rispondere a questi problemi:
 * Volevo che i dati dell'app non dipendessero dall’applicazione stessa. Anche se la mia app smettesse di funzionare o non fosse più mantenuta, tutti i documenti resterebbero leggibili, modificabili e utilizzabili come semplici file Markdown organizzati in cartelle.
 * Volevo un sistema del quale fosse facile e banale creare una copia di sicurezza. In questo caso specifico, basta copiare una singola cartella.
 * Volevo un sistema che all'occorrenza fosse versionabile con Git in modo efficiente
-* Volevo un sistema talmente semplice da poter essere usato con un semplice editor di testo
+* Volevo un sistema talmente semplice da poter essere usato direttamente con un editor di testo
 * Volevo che i file giornalieri referenziassero automaticamente i file settimanali, e che i file settimanali referenziassero automaticamente i file mensili, e così via
 * Volevo che tutto fosse basato semplicemente su cartelle annidate e file di testo semplici codificati in UTF-8, per essere sicuro che anche fra 20 anni i dati siano facilmente leggibili e scrivibili
 * Volevo usare come formato file il Markdown, per poter scrivere facilmente in formato testo puro ma poter gestire qualche elemento di stile e formattazione. Il formato Markdown è l'ideale perché rappresenta un'idea di come rappresentare gli stili in un semplice file di testo puro, più che essere un formato documento vero e proprio
