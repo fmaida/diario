@@ -1,6 +1,6 @@
 # Diario
 
-A personal diary application inspired by the bullet journal method.
+A personal diary application inspired by the [bullet journal](https://bulletjournal.com) method.
 
 Diario is a framework that is easy for humans to adopt 
 and stick with, and easy for machines to process.  

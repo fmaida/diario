@@ -1,6 +1,6 @@
 # Diario
 
-Gestisce un diario personale ispirato al bullet journal.  
+Gestisce un diario personale ispirato al [bullet journal](https://bulletjournal.com).  
 
 Diario è un framework che le persone possono adottare 
 facilmente e portare avanti nel tempo, e che le macchine 
