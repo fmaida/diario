@@ -54,6 +54,8 @@ These are the default configuration parameters:
 }
 ```
 
+The `editor` parameter can be either a string or a list of strings, for example: `["open", "-a", "/Applications/MarkEdit.app/Contents/MacOS/MarkEdit"]`
+
 ## Usage
 
 To start the application and create a document for the current day, run:

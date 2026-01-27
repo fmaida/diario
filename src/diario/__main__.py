@@ -58,20 +58,16 @@ def main() -> None:
     #print(collezione.quarterly.index)
     #print(collezione.yearly.index)
 
+    command = []
     editor = diario.config.settings.get("editor", "nano")
-    subprocess.run(
-        [
-            #"open",
-            #"-a",
-            editor,
-            #str(collezione.yearly.index),
-            #str(collezione.quarterly.index),
-            #str(collezione.monthly.index),
-            str(collezione.weekly.index),
-            str(collezione.daily.index),
-        ],
-        check=False,
-    )
+    if type(editor) is list:
+        command.extend(editor)
+    else:
+        command.append(editor)
+    command.append(str(collezione.weekly.index))
+    command.append(str(collezione.daily.index))
+
+    subprocess.run(command, check=False)
 
 if __name__ == "__main__":
     main()

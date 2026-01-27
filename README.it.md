@@ -65,6 +65,8 @@ Questi sono i parametri di default dell'applicazione:
 }
 ```
 
+Il parametro `editor` può essere una stringa oppure una lista di stringhe, ad esempio: `["open", "-a", "/Applications/MarkEdit.app/Contents/MacOS/MarkEdit"]`
+
 ## Uso
 
 Per lanciare l'app e creare un documento per il giorno corrente, 
