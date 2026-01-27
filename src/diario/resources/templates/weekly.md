@@ -1,4 +1,4 @@
-# {{monday_day_name_short}} {{monday_day}} {{monday_month_name}} – {{sunday_day_name_short_2}} {{sunday_day}} {{sunday_month_name}} {{sunday_year}}
+# {{monday_day_name_short}} {{monday_day}} {{monday_month_name}} – {{sunday_day_name_short}} {{sunday_day}} {{sunday_month_name}} {{sunday_year}}
 
 ## What do I plan to do this week?
 

@@ -61,8 +61,8 @@ def main() -> None:
     editor = diario.config.settings.get("editor", "nano")
     subprocess.run(
         [
-            "open",
-            "-a",
+            #"open",
+            #"-a",
             editor,
             #str(collezione.yearly.index),
             #str(collezione.quarterly.index),
