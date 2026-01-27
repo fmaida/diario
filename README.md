@@ -14,13 +14,13 @@ L'app nasce per rispondere a questi problemi:
 * Volevo un sistema mantenibile e gestibile nel lungo periodo, idealmente per tutta la vita dell’utente.
 * Volevo che i dati dell'app non dipendessero dall’applicazione stessa. Anche se la mia app smettesse di funzionare o non fosse più mantenuta, tutti i documenti resterebbero leggibili, modificabili e utilizzabili come semplici file Markdown organizzati in cartelle.
 * Volevo un sistema del quale fosse facile e banale creare una copia di sicurezza. In questo caso specifico, basta copiare una singola cartella.
-* Volevo un sistema che all'occorrenza fosse facilmente versionabile con Git
+* Volevo un sistema che all'occorrenza fosse versionabile con Git in modo efficente
 * Volevo un sistema talmente semplice da poter essere usato con un semplice editor di testo
 * Volevo che i file giornalieri referenziassero automaticamente i file settimanali, e che i file settimanali referenziassero automaticamente i file mensili, e così via
 * Volevo che tutto fosse basato semplicemente su cartelle annidate e file di testo semplici codificati in UTF-8, per essere sicuro che anche fra 20 anni i dati siano facilmente leggibili e scrivibili
 * Volevo usare come formato file il Markdown, per poter scrivere facilmente in formato testo puro ma poter gestire qualche elemento di stile e formattazione. Il formato Markdown è l'ideale perché rappresenta un'idea di come rappresentare gli stili in un semplice file di testo puro, più che essere un formato documento vero e proprio
 * Volevo che tutti i file Markdown potessero essere modificati manualmente in qualsiasi momento da qualsiasi applicazione di testo
-* Volevo che tutto ciò che si trova all’interno di ogni sottocartella, ad eccezione del file `_index.md`, venisse considerato implicitamente come ALLEGATO al documento del giorno, della settimana, del mese, del trimestre o dell’anno corrispondente.
+* Volevo che tutto ciò che si trova all’interno di ogni sottocartella, ad eccezione del file `_index.md`, venisse considerato implicitamente come allegato al documento del giorno, della settimana, del mese, del trimestre o dell’anno corrispondente.
 * Volevo utilizzare solo funzioni presenti nella libreria standard di Python (>=3.11), in modo da garantire la massima compatibilità e manutenibilità del software nel lungo periodo.
 
 ### Come funziona la suddivisione del tempo
@@ -35,7 +35,7 @@ che la settimana standard inizi di lunedì e termini di domenica.
 * Trimestrali: `{destinazione}/diary/quarterly/YYYY/QQ/`
 * Annuali: `{destinazione}/diary/yearly/YYYY/`
 
-> Nota 1: `WW` è un numero da 00 a 53 che rappresenta la settimana in base allo standard ISO 8601.  
+> Nota 1: `WW` è un numero da 01 a 53 che rappresenta la settimana in base allo standard ISO 8601.  
 > Nota 2: `QQ` è un numero da 01 a 04 che rappresenta il trimestre.
 
 ### Installazione
