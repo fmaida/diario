@@ -109,6 +109,17 @@ con il comando:
 diario --help
 ```
 
+## Domande frequenti
+
+### "Ma devo riscrivere ogni volta tutte le attività, passando dai documenti giornalieri a quelli settimanali e mensili?"
+
+Alcune attività compariranno in più punti.  
+**Questo è assolutamente intenzionale.**
+Come evidenziato dal metodo del *Bullet Journal*, riscrivere è parte integrante del processo di revisione, non è un’inefficienza.
+
+Pensala così:   
+**Se un’attività non vale la pena di essere riscritta, magari non vale nemmeno la pena di portarla avanti.**
+
 ## Esempio di struttura creata dall'app
 
 ```

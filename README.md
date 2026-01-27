@@ -90,6 +90,17 @@ For additional options, refer to the built-in help:
 diario --help
 ```
 
+## Frequently asked questions
+
+### "But I have to rewrite every task I have in my calendar, each time between daily, weekly and monthly documents!"
+
+Some tasks will appear in multiple places.
+**This is absolutely intentional.**
+As highlighted by the *Bullet Journal* method, rewriting is part of the review process, not an inefficiency.  
+
+Think about it this way:  
+**If a task is not worth rewriting, it may not be worth carrying forward.**
+
 ## Example directory structure created by the application
 
 ```
