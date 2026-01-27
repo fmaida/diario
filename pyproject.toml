@@ -1,6 +1,6 @@
 [project]
 name = "diario-cli"
-version = "1.0.1post3"
+version = "1.0.1post4"
 description = "Diario is an opinionated personal journaling tool inspired by bullet journal practices, based on plain UTF-8 Markdown files organized in a time-based directory structure. It prioritizes long-term readability, filesystem portability, and independence from the application itself."
 authors = [
     {name = "Francesco Maida",email = "francesco.maida@gmail.com"}
@@ -11,7 +11,7 @@ dependencies = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/fmaida/diario"
+Homepage = "https://diario.cesco.it"
 Repository = "https://github.com/fmaida/diario"
 
 [tool.poetry]
