@@ -41,7 +41,15 @@ class Diary:
     def __init__(self, config_file:Path = None):
         self.config = Config(config_file=config_file)
         if self.config.settings.get("locale") is not None:
-            locale.setlocale(locale.LC_TIME, self.config.settings.get("locale") + ".UTF-8")
+            try:
+                locale.setlocale(locale.LC_TIME, self.config.settings.get("locale") + ".UTF-8")
+            except locale.Error:
+                # This should work on Debian and other Linux forks
+                try:
+                    locale.setlocale(locale.LC_TIME, self.config.settings.get("locale") + ".UTF8")
+                except locale.Error:
+                    print(f"WARNING: Invalid locale: {self.config.settings.get('locale')}")
+
         #self.today = datetime.date.today()
         base_dir = Path(self.config.settings["path"])
         base_dir.mkdir(parents=True, exist_ok=True)
