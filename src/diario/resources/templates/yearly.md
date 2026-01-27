@@ -1,17 +1,17 @@
 # {{year}}
 
-## Cosa ho intenzione di fare nel {{year}}?
+## What do I plan to do in {{year}}?
 
 1. 
 
-## Che cosa ho imparato nel {{year}}?
+## What did I learn in {{year}}?
 
 1. 
 
-## Perché questo dovrebbe importarmi?
+## Why should this matter to me?
 
 1. 
 
-## Che cosa farò di diverso a causa di questo?
+## What will I do differently because of this?
 
 1. 

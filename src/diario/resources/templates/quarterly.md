@@ -1,22 +1,22 @@
 # {{quarter}} {{year}}
 
-## Cosa ho intenzione di fare nel {{quarter}} {{year}}?
+## What do I plan to do in {{quarter}} {{year}}?
 
 1. 
 
-## Che cosa ho imparato nel {{quarter}} {{year}}?
+## What did I learn in {{quarter}} {{year}}?
 
 1. 
 
-## Perché questo dovrebbe importarmi?
+## Why should this matter to me?
 
 1. 
 
-## Che cosa farò di diverso a causa di questo?
+## What will I do differently because of this?
 
 1. 
 
 
 ________________________________________________________________
-## Vai alla vista annuale:
+## Go to yearly view:
 * [{{year}}]({{yearly_url}})  

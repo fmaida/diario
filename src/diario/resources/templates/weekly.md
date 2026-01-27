@@ -1,31 +1,31 @@
-# {{monday_day_name_short_2}} {{monday_day}} {{monday_month_name}} – {{sunday_day_name_short_2}} {{sunday_day}} {{sunday_month_name}} {{sunday_year}}
+# {{monday_day_name_short}} {{monday_day}} {{monday_month_name}} – {{sunday_day_name_short_2}} {{sunday_day}} {{sunday_month_name}} {{sunday_year}}
 
-## Cosa ho intenzione di fare questa settimana?
-
-1. 
-
-## Che cosa ho imparato questa settimana?
+## What do I plan to do this week?
 
 1. 
 
-## Perché questo dovrebbe importarmi?
+## What did I learn this week?
 
 1. 
 
-## Che cosa farò di diverso a causa di questo?
+## Why should this matter to me?
+
+1. 
+
+## What will I do differently because of this?
 
 1. 
 
 
 ________________________________________________________________
-## Vai alla vista giornaliera:
-* [{{monday_day_name_short_2}} {{monday_day}}]({{monday_url}})  
-* [{{tuesday_day_name_short_2}} {{tuesday_day}}]({{tuesday_url}})  
-* [{{wednesday_day_name_short_2}} {{wednesday_day}}]({{wednesday_url}})  
-* [{{thursday_day_name_short_2}} {{thursday_day}}]({{thursday_url}})  
-* [{{friday_day_name_short_2}} {{friday_day}}]({{friday_url}})  
-* [{{saturday_day_name_short_2}} {{saturday_day}}]({{saturday_url}})  
-* [{{sunday_day_name_short_2}} {{sunday_day}}]({{sunday_url}})  
+## Go to daily view:
+* [{{monday_day_name_short}} {{monday_day}}]({{monday_url}})  
+* [{{tuesday_day_name_short}} {{tuesday_day}}]({{tuesday_url}})  
+* [{{wednesday_day_name_short}} {{wednesday_day}}]({{wednesday_url}})  
+* [{{thursday_day_name_short}} {{thursday_day}}]({{thursday_url}})  
+* [{{friday_day_name_short}} {{friday_day}}]({{friday_url}})  
+* [{{saturday_day_name_short}} {{saturday_day}}]({{saturday_url}})  
+* [{{sunday_day_name_short}} {{sunday_day}}]({{sunday_url}})  
 
-## Vai alla vista mensile:
+## Go to monthly view:
 * [{{month_name}} {{year}}]({{monthly_url}})  
