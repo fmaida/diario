@@ -181,6 +181,8 @@ class DateVariables:
         self.yesterday_url = self._files.get_relative_path(day, source_view="daily", destination_view="yesterday")
         self.today_url = self.daily_url
         self.tomorrow_url = self._files.get_relative_path(day, source_view="daily", destination_view="tomorrow")
+        self.previous_week_url = self._files.get_relative_path(day, source_view="weekly", destination_view="previous-week")
+        self.next_week_url = self._files.get_relative_path(day, source_view="weekly", destination_view="next-week")
 
         temp = monday
         self.monday_url = self._files.get_relative_path(temp, source_view="weekly", destination_view="daily")

@@ -27,5 +27,11 @@ ________________________________________________________________
 * [{{saturday_day_name_short}} {{saturday_day}}]({{saturday_url}})  
 * [{{sunday_day_name_short}} {{sunday_day}}]({{sunday_url}})  
 
+## Go to the previous week:
+* [Previous Week]({{previous_week_url}}) 
+
+## Go to the next week:
+* [Next Week]({{next_week_url}})
+
 ## Go to monthly view:
 * [{{month_name}} {{year}}]({{monthly_url}})  

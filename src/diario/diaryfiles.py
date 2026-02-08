@@ -63,6 +63,10 @@ class DiaryFiles:
             return self._get_day_path(day - datetime.timedelta(days=1))
         elif view == "tomorrow":
             return self._get_day_path(day + datetime.timedelta(days=1))
+        elif view == "previous-week":
+            return self._get_week_path(day - datetime.timedelta(days=7))
+        elif view == "next-week":
+            return self._get_week_path(day + datetime.timedelta(days=7))
         else:
             raise ValueError(f"Invalid view: {view}")
 

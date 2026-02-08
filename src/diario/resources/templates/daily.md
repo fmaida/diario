@@ -22,11 +22,11 @@
 
 
 ________________________________________________________________
-## Go to weekly view:
-* [{{monday_day_name_short_2}} {{monday_day}} {{monday_month_name_short}} – {{sunday_day_name_short_2}} {{sunday_day}} {{sunday_month_name_short}}]({{weekly_url}})  
-
 ## Go to previous day:
 * [{{yesterday_day_name_short_2}} {{yesterday_day}} {{yesterday_month_name}}]({{yesterday_url}})  
 
 ## Go to next day:
 * [{{tomorrow_day_name_short_2}} {{tomorrow_day}} {{tomorrow_month_name}}]({{tomorrow_url}})
+
+## Go to weekly view:
+* [{{monday_day_name_short_2}} {{monday_day}} {{monday_month_name_short}} – {{sunday_day_name_short_2}} {{sunday_day}} {{sunday_month_name_short}}]({{weekly_url}})  
